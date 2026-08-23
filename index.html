@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Morya Resort, a peaceful coastal escape with thoughtful stays, local experiences, and warm hospitality.">
+    <title>Morya Resort | Your stay, beautifully unhurried</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home"><span class="logo-mark">M</span>Morya Resort</a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation"
+                aria-expanded="false">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#stay">Stay</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#location">Location &amp; Contact</a></li>
+            </ul>
+            <a class="btn btn-primary" href="#booking">Book your stay <span>→</span></a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="eyebrow">A quiet coast in Goa</div>
+                <h1>Come back<br>to yourself.</h1>
+                <p>Slow mornings, warm evenings, and a little more space for the things that matter. Welcome to Morya
+                    Resort.</p>
+                <div class="hero-actions"><a class="btn btn-primary" href="#booking">Find your room <span>→</span></a><a
+                        class="btn btn-light" href="#experience">Explore Morya</a></div>
+            </div>
+        </section>
+
+        <section class="booking-card container" id="booking" aria-labelledby="booking-title">
+            <div class="booking-heading">
+                <h3 id="booking-title">Plan your escape</h3><span>Best available rate when you book direct</span>
+            </div>
+            <form class="booking-form" id="booking-form" novalidate>
+                <div class="field"><label for="arrival">Check in</label><input id="arrival" type="date" required></div>
+                <div class="field"><label for="departure">Check out</label><input id="departure" type="date" required>
+                </div>
+                <div class="field"><label for="guests">Guests</label><input id="guests" type="number" min="1" max="8"
+                        value="2" required></div>
+                <div class="field"><label for="room">Room</label><select id="room">
+                        <option value="garden">Garden Room</option>
+                        <option value="sea">Sea View Suite</option>
+                        <option value="villa">Morya Villa</option>
+                    </select></div>
+                <button class="btn btn-primary" type="submit">Check availability</button>
+            </form>
+            <p class="form-status" id="booking-status" role="status"></p>
+        </section>
+
+        <section class="section intro container">
+            <div>
+                <div class="eyebrow">A different kind of luxury</div>
+                <h2>Less schedule.<br>More sky.</h2>
+            </div>
+            <div>
+                <p>Morya is a small coastal resort shaped by the landscape around it. Days unfold at their own pace
+                    here, between the palms, the pool, and the Arabian Sea.</p><a class="btn btn-outline"
+                    href="#experience">Discover the resort <span>→</span></a>
+            </div>
+        </section>
+
+        <section class="section gallery-section" id="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">The Morya feeling</div>
+                        <h2>Make the view<br>part of your day.</h2>
+                    </div>
+                    <p>Moments worth lingering over.</p>
+                </div>
+                <div class="carousel" id="resort-carousel" tabindex="0" aria-label="Morya Resort image gallery">
+                    <div class="carousel-track">
+                        <div class="carousel-slide" role="img" aria-label="Morya Resort pool at sunrise"></div>
+                        <div class="carousel-slide" role="img" aria-label="A tropical beach near Morya Resort"></div>
+                        <div class="carousel-slide" role="img" aria-label="A peaceful resort garden"></div>
+                        <div class="carousel-slide" role="img" aria-label="Sunset over the coast"></div>
+                    </div><button class="carousel-arrow prev" type="button"
+                        aria-label="Previous image">←</button><button class="carousel-arrow next" type="button"
+                        aria-label="Next image">→</button>
+                    <div class="carousel-dots" role="tablist" aria-label="Choose gallery image"><button
+                            class="carousel-dot active" type="button" role="tab" aria-label="Show image 1"
+                            aria-selected="true"></button><button class="carousel-dot" type="button" role="tab"
+                            aria-label="Show image 2" aria-selected="false"></button><button class="carousel-dot"
+                            type="button" role="tab" aria-label="Show image 3" aria-selected="false"></button><button
+                            class="carousel-dot" type="button" role="tab" aria-label="Show image 4"
+                            aria-selected="false"></button></div>
+                    <div class="carousel-caption" aria-live="polite">Pool mornings at Morya</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="stay">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">Stay awhile</div>
+                    <h2>Rooms with room<br>to breathe.</h2>
+                </div>
+                <p>Three ways to settle in.</p>
+            </div>
+            <div class="room-grid">
+                <article class="room-card">
+                    <div class="room-image"></div>
+                    <div class="room-body">
+                        <h3>Garden Room</h3>
+                        <p>Quiet mornings, a shaded terrace, and a garden view.</p>
+                        <div class="room-meta"><span>2 guests · 38 m²</span><span class="room-price">From ₹12,500</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="room-card">
+                    <div class="room-image"></div>
+                    <div class="room-body">
+                        <h3>Sea View Suite</h3>
+                        <p>A front-row seat to the coast with a private sunset deck.</p>
+                        <div class="room-meta"><span>2 guests · 55 m²</span><span class="room-price">From ₹18,500</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="room-card">
+                    <div class="room-image"></div>
+                    <div class="room-body">
+                        <h3>Morya Villa</h3>
+                        <p>Your own spacious hideaway, made for long lunches and late swims.</p>
+                        <div class="room-meta"><span>4 guests · 105 m²</span><span class="room-price">From
+                                ₹29,000</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section story container">
+            <div class="story-image" role="img" aria-label="Morya Resort pool overlooking the sea"></div>
+            <div>
+                <div class="eyebrow">The Morya way</div>
+                <h2>Everything you need.<br>Nothing you don't.</h2>
+                <p>Start with a swim before breakfast. Take the long way to lunch. Our team is here to make your stay
+                    effortless, with local recommendations, fresh food, and room to simply be.</p><button
+                    class="btn btn-primary" id="amenities-button" type="button">See what is included
+                    <span>→</span></button>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="location">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <div class="eyebrow">Find your way here</div>
+                    <h2>Close to everything.<br>Far from ordinary.</h2>
+                    <p>Morya Resort is tucked away in a peaceful pocket of North Goa, minutes from the sea and an easy
+                        drive from the airport.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail"><strong>Address</strong><span>Morjim Beach Road<br>North Goa, India
+                                403512</span></div>
+                        <div class="contact-detail"><strong>Reach us</strong><span>+91 832 555
+                                0190<br>hello@moryaresort.com</span></div>
+                    </div>
+                </div><iframe class="map-frame" title="Map showing Morya Resort in North Goa"
+                    src="https://www.google.com/maps?q=Morjim%20Beach%20Goa&output=embed" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="amenities-modal" hidden role="dialog" aria-modal="true" aria-labelledby="amenities-title">
+        <div class="modal-card"><button class="modal-close" id="modal-close" type="button"
+                aria-label="Close amenities">×</button>
+            <div class="eyebrow">Included with every stay</div>
+            <h2 id="amenities-title">The good things<br>are already here.</h2>
+            <p>Arrive with an open calendar. We will take care of the details.</p>
+            <ul class="amenity-list">
+                <li>Daily breakfast by the sea</li>
+                <li>Welcome drink on arrival</li>
+                <li>Pool and sunset terrace</li>
+                <li>Private beach access</li>
+                <li>Complimentary bicycles</li>
+                <li>High-speed Wi-Fi</li>
+                <li>Daily housekeeping</li>
+                <li>Local concierge service</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container footer-line">
+            <p>© 2026 Morya Resort · North Goa, India</p>
+            <p><a href="mailto:hello@moryaresort.com">hello@moryaresort.com</a> · <a href="tel:+918325550190">Call
+                    us</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
